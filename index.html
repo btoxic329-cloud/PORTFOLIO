@@ -1,207 +1,661 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b18">
+  <meta name="description" content="Ahmad Mujtaba — AI Front-End Developer, Python Flask Developer, and Machine Learning enthusiast.">
+  <title>Ahmad Mujtaba | Developer Portfolio</title>
 
-<meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width,initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<title>Ahmad Mujtaba Portfolio</title>
-
-<link rel="stylesheet"
-href="style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Cinzel:wght@500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-
-<script src=
-"https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js">
-</script>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div id="bg"></div>
+  <div class="page-noise" aria-hidden="true"></div>
+  <canvas id="scene-canvas" aria-hidden="true"></canvas>
 
-<nav>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+
+    <a class="brand" href="#home" aria-label="Ahmad Mujtaba home">
+      <span class="brand-name">AHMAD<span> MUJTABA</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+    </nav>
 
-<h2 class="logo">
+  </header>
 
-AHMAD  MUJTABA
+  <main>
 
-</h2>
+    <section class="hero section-shell" id="home">
 
-<ul>
+      <div class="hero-copy reveal">
 
-<li><a href="#about">About</a></li>
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          AVAILABLE FOR OPPORTUNITIES
+        </div>
 
-<li><a href="#education">Education</a></li>
+        <p class="hero-kicker">AI • WEB DEVELOPMENT • MACHINE LEARNING</p>
 
-<li><a href="#skills">Skills</a></li>
+        <h1>
+          Building digital<br>
+          experiences with <span class="gradient-text">intelligence.</span>
+        </h1>
 
-<li><a href="#contact">Contact</a></li>
+        <p class="hero-description">
+          I'm <strong>Ahmad Mujtaba</strong>, a BSCS student and developer exploring the intersection of modern web experiences, AI-powered interfaces, and intelligent systems.
+        </p>
 
-</ul>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            Explore my work <span>↘</span>
+          </a>
 
-</nav>
+          <a class="button button-quiet" href="#contact">
+            Get in touch <span>↗</span>
+          </a>
+        </div>
 
-<section class="hero">
+        <div class="hero-meta">
 
-<div>
+          <div>
+            <span class="meta-number">02<span>+</span></span>
+            <span class="meta-label">Years in AI front-end</span>
+          </div>
 
-<h1>
+          <div>
+            <span class="meta-number">06<span>mo</span></span>
+            <span class="meta-label">AI model training</span>
+          </div>
 
-AHMAD MUJTABA
+          <div>
+            <span class="meta-number">01</span>
+            <span class="meta-label">Featured project</span>
+          </div>
 
-</h1>
+        </div>
 
-<h3>
+      </div>
 
-AI Front-End 
+      <div class="hero-visual reveal" aria-label="Abstract animated 3D visual">
 
-Python Developer
+        <div class="visual-orbit orbit-a"></div>
+        <div class="visual-orbit orbit-b"></div>
+        <div class="visual-orbit orbit-c"></div>
 
-</h3>
+        <div class="visual-core">
+          <div class="core-inner">
+            <span>AM</span>
+            <small>CREATIVE<br>TECHNOLOGY</small>
+          </div>
+        </div>
 
-<p>
+        <div class="floating-chip chip-top">
+          <span class="chip-icon">✳</span>
+          <span>
+            <b>AI & ML</b>
+            <small>Intelligent systems</small>
+          </span>
+        </div>
 
-Building futuristic digital experiences
+        <div class="floating-chip chip-bottom">
+          <span class="chip-icon chip-blue">⌘</span>
+          <span>
+            <b>Web development</b>
+            <small>Interfaces that feel right</small>
+          </span>
+        </div>
 
-</p>
+        <div class="visual-caption">
+          <span class="caption-line"></span>
+          CREATIVITY MEETS CODE
+        </div>
 
+      </div>
 
-</div>
+      <a href="#about" class="scroll-cue">
+        <span class="scroll-wheel"></span>
+        SCROLL TO EXPLORE
+      </a>
 
-</section>
+    </section>
 
-<section
-id="about"
-class="card hidden">
 
-<h2>
+    <section class="section-shell section-block" id="about">
 
-About Me
+      <div class="section-heading reveal">
+        <p class="section-index">01 / ABOUT</p>
 
-</h2>
+        <h2>
+          Curious mind.<br>
+          <span class="muted-heading">Practical builder.</span>
+        </h2>
+      </div>
 
-<p>
+      <div class="about-grid">
 
-Passionate about AI,
-Front-End Development,
-Machine Learning,
-Python and innovative technologies.
+        <div class="about-intro reveal">
 
-</p>
+          <p class="large-copy">
+            I enjoy turning ideas into
+            <span class="text-highlight">useful digital products</span>
+            — from responsive front-end experiences to AI-enabled tools and data-driven applications.
+          </p>
 
-</section>
+          <p class="body-copy">
+            My work brings together design thinking, programming, and a growing understanding of machine learning. I'm currently pursuing a BSCS degree at PMAS-Arid Agriculture University, Rawalpindi, and continuing to build my skills through hands-on projects.
+          </p>
 
-<section
-id="education"
-class="card hidden">
+        </div>
 
-<h2>
 
-Education
+        <div class="about-card reveal">
 
-</h2>
+          <div class="card-topline">
+            <span class="mini-symbol">✦</span>
+            <span>MY APPROACH</span>
+          </div>
 
-<div>
+          <div class="approach-item">
+            <span class="approach-number">01</span>
 
-<h3>BSCS</h3>
+            <div>
+              <h3>Think clearly</h3>
+              <p>Understand the problem before choosing the tools.</p>
+            </div>
+          </div>
 
-<p>
+          <div class="approach-item">
+            <span class="approach-number">02</span>
 
-PMAS ARID Agriculture University
+            <div>
+              <h3>Build thoughtfully</h3>
+              <p>Make interfaces responsive, purposeful, and easy to use.</p>
+            </div>
+          </div>
 
-</p>
+          <div class="approach-item">
+            <span class="approach-number">03</span>
 
-</div>
+            <div>
+              <h3>Keep learning</h3>
+              <p>Explore new technologies and improve with every project.</p>
+            </div>
+          </div>
 
-<div>
+        </div>
 
-<h3>FSC</h3>
+      </div>
 
-<p>
+    </section>
 
-ARF College MM Alam
 
-</p>
+    <section class="section-shell section-block" id="skills">
 
-</div>
+      <div class="section-heading reveal">
 
-<div>
+        <p class="section-index">02 / CAPABILITIES</p>
 
-<h3>Matric</h3>
+        <h2>
+          Tools for turning<br>
+          <span class="muted-heading">ideas into reality.</span>
+        </h2>
 
-<p>
+        <p class="heading-support">
+          A growing toolkit across development, data, and intelligent systems.
+        </p>
 
-Government Comprehensive High School
+      </div>
 
-</p>
 
-</div>
+      <div class="skills-grid">
 
-</section>
+        <article class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon">01</span>
+            <span class="skill-arrow">↗</span>
+          </div>
 
-<section
-id="skills"
-class="card hidden">
+          <h3>AI Front-End Development</h3>
 
-<h2>
+          <p>
+            Building intuitive interfaces for AI-powered experiences.
+          </p>
 
-Skills
+          <div class="skill-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </article>
 
-</h2>
 
-<div class="skills">
+        <article class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon">02</span>
+            <span class="skill-arrow">↗</span>
+          </div>
 
-<span>Python</span>
+          <h3>Python & Flask</h3>
 
-<span>SQL</span>
+          <p>
+            Creating application logic, routes, and web app foundations.
+          </p>
 
-<span>AI</span>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>Flask</span>
+          </div>
+        </article>
 
-<span>Machine Learning</span>
 
-<span>Deep Learning</span>
+        <article class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon">03</span>
+            <span class="skill-arrow">↗</span>
+          </div>
 
-<span>Front-End</span>
+          <h3>Machine Learning</h3>
 
-<span>MS Office</span>
+          <p>
+            Exploring data-driven methods and model workflows.
+          </p>
 
-</div>
+          <div class="skill-tags">
+            <span>ML</span>
+            <span>Model training</span>
+          </div>
+        </article>
 
-</section>
 
-<section
-id="contact"
-class="card hidden">
+        <article class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon">04</span>
+            <span class="skill-arrow">↗</span>
+          </div>
 
-<h2>
+          <h3>Deep Learning</h3>
 
-Contact
+          <p>
+            Learning neural network concepts and intelligent systems.
+          </p>
 
-</h2>
+          <div class="skill-tags">
+            <span>Deep learning</span>
+            <span>AI</span>
+          </div>
+        </article>
 
-<p>
 
-Email:
-ahmad.mujtaba.123345@gmail.com
+        <article class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon">05</span>
+            <span class="skill-arrow">↗</span>
+          </div>
 
-</p>
+          <h3>Database Development</h3>
 
-<p>
+          <p>
+            Working with relational data and database-backed apps.
+          </p>
 
-Phone:
-+92 3287926231
+          <div class="skill-tags">
+            <span>MySQL</span>
+            <span>Database</span>
+          </div>
+        </article>
 
-</p>
 
-</section>
+        <article class="skill-card reveal">
+          <div class="skill-card-head">
+            <span class="skill-icon">06</span>
+            <span class="skill-arrow">↗</span>
+          </div>
 
-<script src="script.js"></script>
+          <h3>Productivity Tools</h3>
+
+          <p>
+            Documentation, presentations, and organized workflows.
+          </p>
+
+          <div class="skill-tags">
+            <span>MS Office</span>
+            <span>Documentation</span>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <section class="section-shell section-block" id="experience">
+
+      <div class="section-heading reveal">
+
+        <p class="section-index">03 / JOURNEY</p>
+
+        <h2>
+          Learning by <span class="muted-heading">doing.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="journey-layout">
+
+        <div class="timeline">
+
+          <article class="timeline-item reveal">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-date">CURRENT</div>
+
+            <div class="timeline-content">
+
+              <h3>BS Computer Science</h3>
+
+              <p class="timeline-place">
+                PMAS-Arid Agriculture University · Rawalpindi
+              </p>
+
+              <p>
+                Studying computer science while building practical skills in web development and AI.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="timeline-item reveal">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-date">2 YEARS</div>
+
+            <div class="timeline-content">
+
+              <h3>AI Front-End Development</h3>
+
+              <p>
+                Experience building front-end experiences connected to AI-focused ideas and workflows.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="timeline-item reveal">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-date">6 MONTHS</div>
+
+            <div class="timeline-content">
+
+              <h3>AI Model Training</h3>
+
+              <p>
+                Hands-on exposure to AI model training concepts and experimentation.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <article class="timeline-item reveal">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-date">3 MONTHS</div>
+
+            <div class="timeline-content">
+
+              <h3>Full-Stack Development</h3>
+
+              <p>
+                Experience working with application interfaces, back-end logic, and databases.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <aside class="education-card reveal">
+
+          <span class="education-icon">✧</span>
+
+          <p class="section-index">EDUCATION</p>
+
+          <h3>Academic foundation</h3>
+
+
+          <div class="education-entry">
+            <span>BS Computer Science</span>
+            <small>
+              Currently enrolled · PMAS-Arid Agriculture University, Rawalpindi
+            </small>
+          </div>
+
+
+          <div class="education-entry">
+            <span>FSc Pre-Engineering</span>
+            <small>
+              ARF Fazaia College MM Alam, Mianwali · 800/1100
+            </small>
+          </div>
+
+
+          <div class="education-entry">
+            <span>Matriculation</span>
+            <small>
+              Government Comprehensive High School, Mianwali · 953/1100
+            </small>
+          </div>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <section class="section-shell section-block" id="projects">
+
+      <div class="section-heading reveal">
+
+        <p class="section-index">04 / SELECTED WORK</p>
+
+        <h2>
+          One project.<br>
+          <span class="muted-heading">Room to build more.</span>
+        </h2>
+
+        <p class="heading-support">
+          A featured project from my portfolio. More work will be added as it develops.
+        </p>
+
+      </div>
+
+
+      <article class="project-card reveal">
+
+        <div class="project-art">
+
+          <div class="project-art-grid"></div>
+
+          <div class="project-window">
+
+            <div class="window-top">
+              <span></span>
+              <span></span>
+              <span></span>
+              <i>nexyro-it</i>
+            </div>
+
+            <div class="window-content">
+
+              <div class="window-label">DIGITAL SOLUTIONS</div>
+
+              <div class="window-title">
+                Ideas into<br>
+                <em>impact.</em>
+              </div>
+
+              <div class="window-line"></div>
+
+              <div class="window-pills">
+                <span>Design</span>
+                <span>Development</span>
+                <span>Technology</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="project-orb"></div>
+
+          <span class="project-art-caption">
+            FEATURED PROJECT / 001
+          </span>
+
+        </div>
+
+
+        <div class="project-info">
+
+          <div class="project-meta">
+            <span>WEB DEVELOPMENT</span>
+            <span>01 / 01</span>
+          </div>
+
+          <h3>Nexyro IT Website</h3>
+
+          <p>
+            A web project focused on presenting a technology brand and its digital services. Visit the live project to explore the current implementation.
+          </p>
+
+          <div class="project-stack">
+            <span>Web design</span>
+            <span>Front-end</span>
+            <span>Responsive UI</span>
+          </div>
+
+          <a
+            class="text-link"
+            href="https://nexyro-it-website.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View live project <span>↗</span>
+          </a>
+
+        </div>
+
+      </article>
+
+    </section>
+
+
+    <section class="section-shell contact-section" id="contact">
+
+      <div class="contact-panel reveal">
+
+        <div class="contact-glow"></div>
+
+        <p class="section-index">05 / CONTACT</p>
+
+        <h2>
+          Have an idea?<br>
+          <span class="gradient-text">Let's make it real.</span>
+        </h2>
+
+        <p class="contact-copy">
+          I'm open to discussing projects, collaborations, and new opportunities. Reach out and let's start a conversation.
+        </p>
+
+        <a
+          class="button button-primary contact-button"
+          href="mailto:ahmad.mujtaba.123345@gmail.com"
+        >
+          Send me an email <span>↗</span>
+        </a>
+
+
+        <div class="contact-details">
+
+          <a href="mailto:ahmad.mujtaba.123345@gmail.com">
+            <span class="detail-label">EMAIL</span>
+            <span>ahmad.mujtaba.123345@gmail.com</span>
+          </a>
+
+          <a href="tel:+923287926231">
+            <span class="detail-label">PHONE</span>
+            <span>+92 328 7926231</span>
+          </a>
+
+          <div>
+            <span class="detail-label">LOCATION</span>
+            <span>Islamabad, Pakistan</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <a class="footer-brand" href="#home">
+      AM<span>.</span>
+    </a>
+
+    <p>Designed with curiosity. Built with code.</p>
+
+    <a class="back-top" href="#home">
+      BACK TO TOP ↑
+    </a>
+
+    <span class="copyright">
+      © <span id="year"></span> AHMAD MUJTABA
+    </span>
+
+  </footer>
+
+
+  <script src="script.js"></script>
 
 </body>
-
 </html>
